@@ -2,7 +2,7 @@ using Sandbox;
 
 partial class TerrortownPlayer : Player
 {
-	public override string Model { get; set; }
+	public string Model { get; set; }
 
 	public override void Respawn()
 	{
