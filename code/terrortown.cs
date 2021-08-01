@@ -6,4 +6,14 @@ public partial class Terrortown : Sandbox.Game
 	{
 		
 	}
+
+	public override void ClientJoined(Client client)
+	{
+		base.ClientJoined(client);
+
+		TerrortownPlayer player = new TerrortownPlayer();
+		client.Pawn = player;
+
+		player.Respawn();
+	}
 }
