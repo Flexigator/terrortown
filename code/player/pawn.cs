@@ -15,6 +15,6 @@ partial class TerrortownPlayer : Player
 		EnableAllCollisions = true;
 		EnableDrawing = true;
 
-		base.Respawn()
+		base.Respawn();
 	}
 }
